@@ -17,10 +17,13 @@
   --color-accent-yellow: var(--accent-yellow);
 }
 
+* {
+  font-family: var(--font-sora), system-ui, sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

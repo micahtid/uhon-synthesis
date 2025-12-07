@@ -7,7 +7,8 @@ export interface Photo {
 
 export interface Cluster {
   id: string;
-  description: string;
+  descriptions: string[];
+  author: string;
   photos: Photo[];
   date: string;
 }
@@ -16,7 +17,13 @@ export const clusters: Cluster[] = [
   {
     id: "1",
     date: "October 12, 2023",
-    description: "The morning light hit the architecture in a way that made everything feel suspended in time. Shadows played across the concrete, softening the brutalist edges.",
+    author: "Micah",
+    descriptions: [
+      "The morning light hit the architecture in a way that made everything feel suspended in time. Shadows played across the concrete, softening the brutalist edges.",
+      "There's something about early morning photography that changes how you see the world. The city is quieter, more honest.",
+      "Brutalist architecture always divides people, but in the right light, those harsh angles become poetry.",
+      "Standing there with my camera, I realized I was documenting more than buildings—I was capturing the feeling of stillness before the city wakes up."
+    ],
     photos: [
       {
         id: "p1",
@@ -35,7 +42,13 @@ export const clusters: Cluster[] = [
   {
     id: "2",
     date: "November 5, 2023",
-    description: "A solitary walk through the autumn woods. The silence was only broken by the crunch of leaves underfoot and the distant call of a crow.",
+    author: "Matthew",
+    descriptions: [
+      "A solitary walk through the autumn woods. The silence was only broken by the crunch of leaves underfoot and the distant call of a crow.",
+      "Nature has a way of resetting your perspective. No notifications, no distractions—just you and the rhythm of your own footsteps.",
+      "The autumn forest feels like walking through a memory. Everything is in transition, preparing for what comes next.",
+      "I've learned that the best photographs come when you're not trying too hard. Sometimes you just need to walk and let the moment find you."
+    ],
     photos: [
       {
         id: "p3",
@@ -48,7 +61,13 @@ export const clusters: Cluster[] = [
   {
     id: "3",
     date: "December 24, 2023",
-    description: "Urban textures. The city breathes in neon and exhales in steam. Every corner tells a different story of decay and renewal.",
+    author: "Adam",
+    descriptions: [
+      "Urban textures. The city breathes in neon and exhales in steam. Every corner tells a different story of decay and renewal.",
+      "There's a raw energy to city photography that you can't find anywhere else. The streets are constantly writing and rewriting themselves.",
+      "Christmas Eve in the city hits different. While everyone's inside celebrating, the streets become this beautiful, lonely stage.",
+      "I've shot this corner a hundred times, but every time the light changes, the story changes. That's the magic of urban photography."
+    ],
     photos: [
       {
         id: "p4",
@@ -73,7 +92,13 @@ export const clusters: Cluster[] = [
   {
     id: "4",
     date: "January 15, 2024",
-    description: "Minimalism is not about the absence of things, but the presence of the right things. Finding calm in the chaos.",
+    author: "Aruneem Ogo was here",
+    descriptions: [
+      "Minimalism is not about the absence of things, but the presence of the right things. Finding calm in the chaos.",
+      "After years of trying to capture everything, I'm learning the power of negative space. What you leave out is just as important as what you include.",
+      "New year, new approach. This is my attempt to strip away the noise and focus on what actually matters in an image.",
+      "The hardest part about minimalist photography isn't finding simple subjects—it's quieting your mind enough to see them."
+    ],
     photos: [
       {
         id: "p7",
