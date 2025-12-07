@@ -182,7 +182,7 @@ export const clusters: Cluster[] = [
       {
         id: "p2",
         url: "https://lh3.googleusercontent.com/d/1lNMzrJxdfyv6qjL0_X0iPdQe-EyDfncM",
-        alt: "Aruneem: Throughout my first semester here at UNL, I’ve largely focused on and cultivated my purpose and ownership. I’ve done this through a great deal of reflection on and correction of my own habits that I maintained in high school. Personally, I think that these two dimensions of Husker POWER are my major motivations since I believe that they are especially indicative of my academic and career-related trajectory. On the other hand, I hope to further develop engagement and relationships throughout my undergraduate career. Not only do I believe that these attributes will directly aid in developing myself as a student, I think that they’re essential parts of being human.",
+        alt: "Throughout my first semester here at UNL, I’ve largely focused on and cultivated my purpose and ownership. I’ve done this through a great deal of reflection on and correction of my own habits that I maintained in high school. Personally, I think that these two dimensions of Husker POWER are my major motivations since I believe that they are especially indicative of my academic and career-related trajectory. On the other hand, I hope to further develop engagement and relationships throughout my undergraduate career. Not only do I believe that these attributes will directly aid in developing myself as a student, I think that they’re essential parts of being human.",
         aspectRatio: "portrait",
       },
       {

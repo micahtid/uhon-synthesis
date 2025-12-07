@@ -26,13 +26,13 @@ export const clusters: Cluster[] = [
       },
       {
         id: "p2",
-        url: "https://lh3.googleusercontent.com/d/1kDLXq-bImS3i15Xx6VKqtKiolnF-0ckH",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Aruneem: Over the semester, my perspective on purpose has changed the most. Throughout high school, I had a really vague understanding of what I wanted to do in life, simply because there are so many things that attract my attention. My enrollment in the Raikes School has pushed me to be more specific in my ambitions and diligent in how I spend my time in these four years to build a good foundation for my career after college. I’ve been fortunate to meet many others here at the Raikes School with a clearer picture of what they want to do in college in mind, and that has inspired me to narrow down on a few intents to help me maximize my skillset.",
         aspectRatio: "portrait",
       },
       {
         id: "p3",
-        url: "https://lh3.googleusercontent.com/d/1XOMm716c6A9HJ3QPVRlan8QqbRZcZdvo",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Matthew: Over the past semester, my perspective has most changed in respect to the well-being aspect of Husker POWER. Dealing with a different environment than I experienced in high school has definitely been challenging. Some weeks I was successful with my duties, and some I really struggled. However, I found the well-being resources here, on the UNL campus, to be very helpful in maintaining my well-being. Particularly, I enjoyed having the ability to practice piano almost anytime at Westbrook, work out at the Campus Recreation Center, or the opportunities to get engaged with other students in the plethora of clubs. Overall, it has definitely been a transformative experience that reshaped my perspective on the importance of well-being.",
         aspectRatio: "portrait",
       },
@@ -57,13 +57,13 @@ export const clusters: Cluster[] = [
       },
       {
         id: "p2",
-        url: "https://lh3.googleusercontent.com/d/1jVO9FDnvMwsRuEPsCx-K3afVO7rOGymn",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Aruneem: The various HIs we were able to participate in, as well as the one-on-one meetings I had with Jillian to plan out and discuss my SMART goals, helped me become more aware of my part as a student at UNL. More specifically, these activities in UHON-101H helped me not just become a more well-rounded student, but also practice actively reflecting on what I excel in and struggle with. For instance, our journaling HI reminded me to be persistent and thorough in reflecting on my experiences, and our resume-building HI reminded me to better articulate my strengths. In both instances, I was encouraged to contemplate my successes and shortcomings, and therefore determine how I can continue to embody well-roundedness.",
         aspectRatio: "portrait",
       },
       {
         id: "p3",
-        url: "https://lh3.googleusercontent.com/d/1ilCEgblmDCnqJ00XSY-1VUocncVEtSIQ",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Matthew: My experience with the HIs and SMART goals weren’t necessarily transformative; however, by engaging in these activities, I was able to gain a perspective on myself and understand the directions I should be moving towards. Having the ability to establish my SMART goals, but then also reflect on my progress with another person has allowed me to understand the importance of checking up on myself every so often in respect of my achievements. I would even say that the reflection on my progress has been the most crucial in keeping me aligned with my SMART goals, rather than just establishing them.",
         aspectRatio: "portrait",
       },
@@ -88,13 +88,13 @@ export const clusters: Cluster[] = [
       },
       {
         id: "p2",
-        url: "https://lh3.googleusercontent.com/d/1ilCEgblmDCnqJ00XSY-1VUocncVEtSIQ",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Aruneem: Personally, being a campus leader means reliably embodying excellence and consistency. What I mean by this is that campus leaders are capable of distinguishing themselves by doing what they do with the best effort at all times. Throughout this first semester of college, I’m lucky to have had the chance to connect with and learn from campus leaders who are excellent and consistent in their own avenues based on their personal interests and ambitions. In doing so, these campus leaders have encouraged me to express Husker POWER in my own path. I strive to be excellent and consistent in what I do, and I hope that my work ethic and philosophy in doing so can inspire others to also be campus leaders.",
         aspectRatio: "portrait",
       },
       {
         id: "p3",
-        url: "https://lh3.googleusercontent.com/d/1EAgL7o-UqtApP2CXHFBBQKEH-LXQKdRz",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Matthew: I believe that being a campus leader is to be someone that can help groups with organization, and development of ideas within a group into reality. A campus leader can recognize students’ needs, and fill in any gaps that might happen here, at UNL. It can be an event to bring in like-minded individuals, or starting a new organization that might qualify something to be a true leader. Husker POWER can be a significant aid in maintaining oneself in a good position in order to fulfill all of the duties of a leader.",
         aspectRatio: "portrait",
       },
@@ -119,13 +119,13 @@ export const clusters: Cluster[] = [
       },
       {
         id: "p2",
-        url: "https://lh3.googleusercontent.com/d/1ifk_lAZ4R605ZGCF4ZYKNCAMnFH6HpDO",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Aruneem: The most significant challenge I’ve experienced this first semester has been maximizing my learning. Oftentimes, in my coursework in classes like CS and math, I feel as if I’ve been reviewing fundamental knowledge and not gaining much out of it. Recently, I’ve dedicated more of my time towards projects and programs that better apply the knowledge I’ve gained in class. Furthermore, I’ve also invested more time in building skills more relevant to my aspirations as an ML researcher, taking advantage of resources pertaining to software engineering at the Raikes School, but also actively contributing to and learning from open-source machine learning projects. While I do value the foundational knowledge I’m reviewing in my classes, I find the application of that knowledge to be a greatly productive use of my time as I maximize my learning.",
         aspectRatio: "portrait",
       },
       {
         id: "p3",
-        url: "https://lh3.googleusercontent.com/d/1iK5-zrJ8IwYnc04qQV18osQm2VAVPjCa",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Matthew: One challenge that I experience during my first semester is organizing all of the free time that I have. In high school, my schedule was planned out from 8:00AM to 5:00PM, and the rest of the time I spent doing homework. This system allowed me to concentrate on a single topic at a given time, which made it easy for me to engage with school. In college, I have a great amount of free time, and in addition, some lectures have optional attendance, which makes it hard to dedicate time for studying. This really troubled me the whole semester, but I determined that I should focus on the assignments with the most importance, one at a time. This has allowed me to consistently deal with the work I was assigned, and is making my organization much better.",
         aspectRatio: "portrait",
       },
@@ -150,13 +150,13 @@ export const clusters: Cluster[] = [
       },
       {
         id: "p2",
-        url: "https://lh3.googleusercontent.com/d/1hc0Y8Gh6HVz2-3_02To1kjZzFAwXnnBp",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Aruneem: A goal I’ve set and work hard to maintain going forward is orienting from a role-focused to a skill-focused path towards my career. What I mean by this is rather than limiting myself to pre-defining my capabilities from a “picked” career path, I want to invest my time and effort into acquiring, practicing, and mastering skills that are, and will remain, valuable. The reason I’m doing this is because I want to remain differentiated and purposeful, especially in an uncertain, evolving job market. I want to be an innovator at the cutting edge of technology, so one specific way I plan on honing in on my goal is by becoming increasingly aware of continuities and changes in the economy that might indicate paradigm shifts in technology.",
         aspectRatio: "portrait",
       },
       {
         id: "p3",
-        url: "https://lh3.googleusercontent.com/d/1-KSwKJnF1D-8Q3972tyMIvksCumMeNZo",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
         alt: "Matthew: One goal I have for myself is to finish assignments early, and not let them pile up. Over the course of the semester, I made poor decisions in completing my assigned work. This led me to work under stress for long periods of time for certain days, and the other days I would spend wasting time. As I am getting more used to college, I am developing strategies that are allowing me to balance out my workflow. Particularly, by finishing my assignments early, I will be able to efficiently balance my load. As I progress further into college, I hope to develop more good habits dealing with all of my assignments.",
         aspectRatio: "portrait",
       },
@@ -181,14 +181,14 @@ export const clusters: Cluster[] = [
       },
       {
         id: "p2",
-        url: "https://lh3.googleusercontent.com/d/1lNMzrJxdfyv6qjL0_X0iPdQe-EyDfncM",
-        alt: "Aruneem: Throughout my first semester here at UNL, I’ve largely focused on and cultivated my purpose and ownership. I’ve done this through a great deal of reflection on and correction of my own habits that I maintained in high school. Personally, I think that these two dimensions of Husker POWER are my major motivations since I believe that they are especially indicative of my academic and career-related trajectory. On the other hand, I hope to further develop engagement and relationships throughout my undergraduate career. Not only do I believe that these attributes will directly aid in developing myself as a student, I think that they’re essential parts of being human.",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
+        alt: "Interior shadow play",
         aspectRatio: "portrait",
       },
       {
         id: "p3",
-        url: "https://lh3.googleusercontent.com/d/1kDLXq-bImS3i15Xx6VKqtKiolnF-0ckH",
-        alt: "Matthew: I believe that I was able to successfully cultivate the engagement dimension of Husker POWER. Over the semester, I was able to engage in multiple clubs, volunteer, work on projects with others and just engage with the Husker community. I really enjoyed the semester in this respect. However, I believe that I can definitely cultivate my ownership aspect by managing some of my workload better, and engaging with the TAs and the professors during their office hours. Overall, I think taking ownership of my work, and recognizing the parts where I am not meeting the mark is something I could do to improve my being at UNL.",
+        url: "https://lh3.googleusercontent.com/d/11XnrbKHJflgY8dybOYgmq_b4tWt-7hYe",
+        alt: "3",
         aspectRatio: "portrait",
       },
       {
