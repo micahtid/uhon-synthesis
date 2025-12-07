@@ -83,7 +83,7 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
       variants={bounce}
-      className="mb-20 max-w-7xl mx-auto px-6"
+      className="max-w-7xl mx-auto px-6"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
 
