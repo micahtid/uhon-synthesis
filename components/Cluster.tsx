@@ -4,6 +4,7 @@ import { clsx } from "clsx";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Cluster as ClusterType, Photo } from "../app/data";
 
 const bounce: Variants = {
@@ -21,16 +22,13 @@ const bounce: Variants = {
   },
 };
 
-// Random rotation for playful effect
-const getRandomRotation = () => Math.random() * 6 - 3;
-
 const PhotoItem = ({
   photo,
   className,
   rotation = 0,
   priority = false,
   isSelected = false,
-  onClick
+  onClick,
 }: {
   photo: Photo;
   className?: string;
@@ -69,13 +67,39 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
   const { photos, description, date } = cluster;
   const count = photos.length;
 
-  // Track which photo is selected (default to first photo)
-  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);
+  // Track which answer is being displayed (default to first)
+  const [currentAnswerIndex, setCurrentAnswerIndex] = useState(0);
+
+  // Track which photo is selected for bringing to front
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null);
 
   // 1st cluster gets priority loading
   const isPriority = index === 0;
 
   const isEven = index % 2 === 0;
+
+  const handlePrevious = () => {
+    setCurrentAnswerIndex((prev) => (prev === 0 ? count - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentAnswerIndex((prev) => (prev === count - 1 ? 0 : prev + 1));
+  };
+
+  // Parse the answer text to extract quote and writer
+  const parseAnswer = (text: string) => {
+    // Format: "Name: Quote text"
+    const match = text.match(/^([^:]+):\s*(.+)$/);
+    if (match) {
+      return {
+        writer: match[1].trim(),
+        quote: match[2].trim()
+      };
+    }
+    return { writer: '', quote: text };
+  };
+
+  const currentAnswer = parseAnswer(photos[currentAnswerIndex].alt);
 
   return (
     <motion.div
@@ -85,7 +109,7 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
       variants={bounce}
       className="max-w-7xl mx-auto px-6"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-start">
 
         {/* Text Cell */}
         <div className={clsx(
@@ -98,11 +122,57 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
           <h2 className="text-xl md:text-2xl text-gray-700 font-semibold leading-tight">
             {date}
           </h2>
-          <div className="relative">
+          <div className="relative flex flex-col">
             <div className="absolute -inset-2 bg-white/50 rounded-3xl -z-10 rotate-1 blur-sm"></div>
-            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
-              {photos[selectedPhotoIndex].alt}
-            </p>
+            <div className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed h-[300px] sm:h-[350px] md:h-[400px] flex flex-col justify-between">
+              <p className="italic">"{currentAnswer.quote}"</p>
+
+              {/* Author and Navigation Row */}
+              <div className="flex items-center justify-between gap-4">
+                {currentAnswer.writer && (
+                  <p className="text-sm sm:text-base md:text-lg text-gray-600 flex-shrink-0">
+                    — {currentAnswer.writer}
+                  </p>
+                )}
+
+                {/* Navigation Controls */}
+                {count > 1 && (
+                  <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+                    <button
+                      onClick={handlePrevious}
+                      className="p-1.5 sm:p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-all hover:scale-110 border border-gray-200"
+                      aria-label="Previous answer"
+                    >
+                      <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />
+                    </button>
+
+                    <div className="flex items-center gap-1.5 sm:gap-2">
+                      {photos.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setCurrentAnswerIndex(idx)}
+                          className={clsx(
+                            "w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all",
+                            idx === currentAnswerIndex
+                              ? "bg-blue-500 w-4 sm:w-6"
+                              : "bg-gray-300 hover:bg-gray-400"
+                          )}
+                          aria-label={`Go to answer ${idx + 1}`}
+                        />
+                      ))}
+                    </div>
+
+                    <button
+                      onClick={handleNext}
+                      className="p-1.5 sm:p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-all hover:scale-110 border border-gray-200"
+                      aria-label="Next answer"
+                    >
+                      <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
 
