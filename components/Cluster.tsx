@@ -7,17 +7,13 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Cluster as ClusterType, Photo } from "../app/data";
 
-const bounce: Variants = {
-  hidden: { opacity: 0, scale: 0.8, y: 50 },
+const fadeIn: Variants = {
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    scale: 1,
-    y: 0,
     transition: {
-      type: "spring",
-      stiffness: 150,
-      damping: 15,
-      mass: 1.2
+      duration: 0.6,
+      ease: "easeOut"
     }
   },
 };
@@ -106,7 +102,7 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
-      variants={bounce}
+      variants={fadeIn}
       className="max-w-7xl mx-auto px-6"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-start">
@@ -128,7 +124,7 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
               <p className="italic">"{currentAnswer.quote}"</p>
 
               {/* Author and Navigation Row */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center justify-between gap-4 mt-3">
                 {currentAnswer.writer && (
                   <p className="text-sm sm:text-base md:text-lg text-gray-600 flex-shrink-0">
                     — {currentAnswer.writer}
@@ -140,7 +136,7 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
                   <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
                     <button
                       onClick={handlePrevious}
-                      className="p-1.5 sm:p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-all hover:scale-110 border border-gray-200"
+                      className="p-1.5 sm:p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow border border-gray-200"
                       aria-label="Previous answer"
                     >
                       <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />
@@ -164,7 +160,7 @@ export const Cluster = ({ cluster, index }: { cluster: ClusterType, index: numbe
 
                     <button
                       onClick={handleNext}
-                      className="p-1.5 sm:p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-all hover:scale-110 border border-gray-200"
+                      className="p-1.5 sm:p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow border border-gray-200"
                       aria-label="Next answer"
                     >
                       <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />

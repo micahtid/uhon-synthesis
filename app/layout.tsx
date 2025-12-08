@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import MinWidthGuard from "../components/MinWidthGuard";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${sora.variable} antialiased`}
       >
-        {children}
+        <MinWidthGuard>{children}</MinWidthGuard>
       </body>
     </html>
   );
